@@ -1,10 +1,11 @@
 package template_method
 
 class Tea: CaffeineBeverage() {
-    override fun prepareRecipe(){
-        boilWater()
+    override fun brew() {
         steepTeaBag()
-        pourInCup()
+    }
+
+    override fun addCondiments() {
         addLemon()
     }
 
